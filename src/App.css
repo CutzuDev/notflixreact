@@ -1,0 +1,3 @@
+.app__body {
+  min-height: calc(100vh - var(--nav__height));
+}
