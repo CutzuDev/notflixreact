@@ -24,6 +24,7 @@ nav {
   gap: 20px;
   align-items: center;
   height: var(--nav__height);
+  background-image: url();
 }
 
 .nav__list {
