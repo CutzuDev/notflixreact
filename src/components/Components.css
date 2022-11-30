@@ -1,0 +1,52 @@
+/* NAVBAR */
+
+nav {
+  height: var(--nav__height);
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  background-color: #151515;
+}
+
+.navbar__container {
+  height: var(--nav__height);
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+
+.nav__halfs {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  height: var(--nav__height);
+}
+
+.nav__list {
+  display: flex;
+  gap: 20px;
+}
+
+.nav__leftImage {
+  object-fit: contain;
+  height: calc(var(--nav__height) - 30px);
+}
+
+
+.nav__Item {
+  display: flex;
+  align-items: center;
+}
+
+.nav_avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgba(245, 245, 245, 0.75);
+  border-radius: 100%;
+  padding: 8px;
+}
