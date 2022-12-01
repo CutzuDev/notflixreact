@@ -9,6 +9,7 @@ function Home() {
   // USE STATES
   const [origMovieData, setOrigMovieData] = useState([]);
   const [movieIds, setMovieIds] = useState([]);
+  const [finalMovieData, setFinalMovieData] = useState(ArrayMovies)
   const ArrayMovies = [];
 
   // USE EFFECTS
