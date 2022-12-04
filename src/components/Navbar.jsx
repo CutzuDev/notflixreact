@@ -3,13 +3,19 @@ import NavLogo from "../assets/notflixlogo.png";
 import { ReactComponent as BellIcon } from "../assets/bell-solid.svg";
 import { ReactComponent as CarretIcon } from "../assets/caret-right-solid.svg";
 import { ReactComponent as UserIcon } from "../assets/user-solid.svg";
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
+  const navigate = useNavigate();
   return (
     <nav>
       <div className="navbar__container">
         <div className="nav__left nav__halfs">
-          <img className="nav__leftImage" src={NavLogo} alt="" />
+          <img
+            className="nav__leftImage"
+            src={NavLogo}
+            onClick={() => navigate("/")}
+          />
           <ul className="nav__leftList nav__list">
             <li className="nav__Item">Home</li>
             <li className="nav__Item">TV Shows</li>
