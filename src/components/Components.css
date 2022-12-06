@@ -105,6 +105,13 @@ nav {
   transform: scale(1.2);
 }
 
+.mt__container:hover .mt__title {
+  transform: translateY(-3px) scale(1.1);
+}
+/* .mt__container:hover .mt__year {
+  transform: translateY(-2.5px);
+} */
+
 .mt__image {
   height: calc(100% - var(--mt__text--heigt));
   object-fit: contain;
@@ -129,7 +136,7 @@ nav {
   background-color: #202020;
   width: 100%;
   height: var(--mt__text--heigt);
-  padding: 0px 20px;
+  padding: 10px 20px;
   z-index: 11;
   display: flex;
   justify-content: space-evenly;
@@ -148,11 +155,13 @@ nav {
   overflow: hidden;
   width: 100%;
   font-size: 18px;
+  transition: all 300ms ease;
 }
 
 .mt__year {
   font-size: 14px;
   color: #999999;
+  transition: all 300ms ease-in-out;
 }
 
 /* INDIV MOVIE PAGE */

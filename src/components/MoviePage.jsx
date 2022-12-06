@@ -20,7 +20,11 @@ function MoviePage() {
   return (
     <div className="page-mp__container">
       <div className="imovie__container">
-        <img src={movieData.Poster} className="imovie__image" />
+        <img
+          src={movieData.Poster}
+          className="imovie__image"
+          draggable={false}
+        />
         <div className="imovie__text--container">
           <div className="imovie__title--container">
             <div className="imovie__title--divider">

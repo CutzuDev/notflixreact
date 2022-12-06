@@ -46,7 +46,7 @@ function Results() {
   //   const { data } = await axios.get(
   //     `http://www.omdbapi.com/?apikey=${API_KEY}&i=${movieId}`
   //   );
-  //   // return data;
+  // return data;
   // }
 
   function testFunc() {
