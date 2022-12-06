@@ -57,7 +57,7 @@ function Results() {
         </svg>
       </div>
       <div className="results__container">
-        {movieData.map((elem, index) => (
+        {movieData?.map((elem, index) => (
           <MovieTile
             key={index}
             Title={elem.Title}
