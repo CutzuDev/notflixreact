@@ -7,7 +7,7 @@ function MovieTile({ Poster, Title, Year, imdbID }) {
   // onClick={() => navigate(`/${imdbID}`)}
 
   return (
-    <div className="mt__divider" onClick={() => navigate(`/results/${imdbID}`)}>
+    <div className="mt__divider" onClick={() => navigate(`/movie/${imdbID}`)}>
       <div className="mt__container">
         <img className="mt__image" src={Poster} />
         <div className="mt__text">

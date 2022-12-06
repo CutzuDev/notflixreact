@@ -36,6 +36,11 @@ nav {
   object-fit: contain;
   height: calc(var(--nav__height) - 30px);
   cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.nav__leftImage:hover {
+  transform: scale(1.1);
 }
 
 .nav__Item {
@@ -71,6 +76,7 @@ nav {
   flex-wrap: wrap;
   padding-top: 30px;
   overflow: hidden;
+  margin: 0px 50px;
 }
 
 /* MOVIE TILE */
@@ -235,10 +241,13 @@ nav {
 
 .imovie__plot {
   width: 100%;
-  max-width: 612px;
+  max-width: 600px;
   color: #999999;
   font-size: 14px;
   line-height: 20px;
+  padding: 0px 20px;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .imovie__rated {
@@ -295,9 +304,52 @@ nav {
   font-size: 24px;
   color: rgba(220, 26, 39, 0.8);
 }
+
 .imovie__details--container > * > h5 {
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   max-width: 900px;
+}
+
+.result__page--selector {
+  width: 50px;
+  height: 50px;
+  background-color: #202020;
+  cursor: pointer;
+  transition: all 100ms ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+
+.result__page--selector svg {
+  width: 30px;
+}
+
+.result__page--selector:active {
+  transform: scale(1.1);
+}
+
+.search__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  height: calc(100vh - var(--nav__height));
+  width: 100%;
+}
+
+.search__input {
+  width: 300px;
+  height: 50px;
+  padding: 20px;
+  color: black;
+  outline: none;
+}
+.search__button {
+  padding: 10px 20px;
+  color: black;
 }
