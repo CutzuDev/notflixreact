@@ -66,6 +66,20 @@ nav {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  position: relative;
+}
+
+.back__button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 15px 30px;
+  outline: none;
+  border-radius: 5px;
+  background-color: #171717;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .results__container {
@@ -77,6 +91,11 @@ nav {
   padding-top: 30px;
   overflow: hidden;
   margin: 0px 50px;
+}
+
+.page-r__nf {
+  font-size: 100px;
+  font-weight: 900;
 }
 
 /* MOVIE TILE */
@@ -120,9 +139,11 @@ nav {
 
 .mt__image {
   height: calc(100% - var(--mt__text--heigt));
-  object-fit: contain;
+  object-fit: fill;
   width: 100%;
-  max-height: 300px;
+  /* max-height: 300px;
+  min-height: 300px; */
+  height: 300px;
   z-index: 10;
   transition: all 300ms ease-in-out;
 }
@@ -152,7 +173,6 @@ nav {
 
 .mt__text--container * {
   text-align: center;
-  margin: 0px !important;
 }
 
 .mt__title {
@@ -178,6 +198,7 @@ nav {
   justify-content: center;
   width: 100vw;
   height: calc(100vh - var(--nav__height));
+  position: relative;
 }
 
 .imovie__container {
@@ -212,6 +233,7 @@ nav {
   align-items: flex-start;
   width: 100%;
   padding: 0px 50px;
+  padding-top: 20px;
   background-color: #151515;
   z-index: 9;
   box-shadow: 0px 0px 30px rgb(0, 0, 0);
@@ -289,14 +311,6 @@ nav {
   gap: 10px;
 }
 
-.imovie__details--container p {
-  margin: 0px !important;
-}
-
-.imovie__details--container h5 {
-  margin: 0px !important;
-}
-
 .imovie__details--container > * {
   display: flex;
   justify-content: center;
@@ -335,26 +349,4 @@ nav {
 
 .result__page--selector:active {
   transform: scale(1.1);
-}
-
-.search__container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 20px;
-  height: calc(100vh - var(--nav__height));
-  width: 100%;
-}
-
-.search__input {
-  width: 300px;
-  height: 50px;
-  padding: 20px;
-  color: black;
-  outline: none;
-}
-.search__button {
-  padding: 10px 20px;
-  color: black;
 }

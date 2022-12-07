@@ -1,5 +1,5 @@
 import "./Components.css";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
@@ -7,6 +7,7 @@ function MoviePage() {
   const API_KEY = process.env.REACT_APP_API_KEY;
   const [movieData, setmovieData] = useState({});
   const { id } = useParams();
+  const navigate = useNavigate();
   useEffect(() => {
     fetchMovieData(id);
   }, []);
@@ -19,6 +20,9 @@ function MoviePage() {
   }
   return (
     <div className="page-mp__container">
+      <button className="back__button" onClick={() => navigate("/")}>
+        Go Back
+      </button>
       <div className="imovie__container">
         <img
           src={movieData.Poster}
