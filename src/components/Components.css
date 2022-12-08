@@ -24,7 +24,6 @@ nav {
   gap: 20px;
   align-items: center;
   height: var(--nav__height);
-  background-image: url();
 }
 
 .nav__list {
@@ -82,11 +81,21 @@ nav {
   cursor: pointer;
 }
 
+.pbm {
+  position: unset;
+  top: unset;
+  left: unset;
+  background-color: #dc1a28;
+  padding: 10px 20px;
+  display: none;
+}
+
 .results__container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1300px;
+  width: 100%;
+  max-width: 1300px;
   flex-wrap: wrap;
   padding-top: 30px;
   overflow: hidden;
@@ -349,4 +358,76 @@ nav {
 
 .result__page--selector:active {
   transform: scale(1.1);
+}
+
+@media (max-width: 480px) {
+  .nav__Item {
+    display: none;
+  }
+
+  .mt__divider {
+    width: 100%;
+  }
+
+  .results__container {
+    overflow-y: scroll;
+    height: 700px;
+    padding: unset;
+    margin: 0px 10px;
+    width: 60%;
+  }
+
+  .back__button {
+    display: none;
+  }
+
+  .pbm {
+    display: inline;
+  }
+
+  .imovie__image {
+    display: none;
+  }
+
+  .imovie__container {
+    width: 100%;
+    height: fit-content;
+    margin: 20px;
+  }
+
+  .imovie__text--container {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .imovie__title--container {
+    padding: 20px;
+  }
+
+  .imovie__title {
+    width: fit-content;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  .imovie__plot {
+    width: 100%;
+    max-width: unset;
+    margin: unset;
+    font-size: 12px;
+  }
+
+  .imovie__title--extras {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .imovie__rated {
+    font-size: 14px;
+  }
+  .imovie__details--container {
+    margin-bottom: 50px;
+    padding-left: unset;
+    padding: 0px 20px;
+  }
 }

@@ -47,3 +47,26 @@
   object-fit: contain;
   cursor: pointer;
 }
+
+@media (max-width: 480px) {
+  .home__container {
+    padding-left: unset;
+    padding: 0px 50px;
+  }
+
+  .home__title {
+    font-size: 30px;
+  }
+
+  .search__container {
+    width: 100%;
+  }
+
+  .search__input {
+    width: 100%;
+  }
+
+  .search__button {
+    width: 30px;
+  }
+}

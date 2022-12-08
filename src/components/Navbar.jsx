@@ -7,13 +7,13 @@ import { useNavigate } from "react-router-dom";
 
 function Navbar() {
   const navigate = useNavigate();
-  
+
   return (
     <nav>
       <div className="navbar__container">
         <div className="nav__left nav__halfs">
           <img
-          draggable={false}
+            draggable={false}
             className="nav__leftImage"
             src={NavLogo}
             onClick={() => navigate("/")}
@@ -39,6 +39,9 @@ function Navbar() {
             <li className="nav__Item">
               <CarretIcon width={10} />
             </li>
+            <button className="back__button pbm" onClick={() => navigate("/")}>
+              Go Back
+            </button>
           </ul>
         </div>
       </div>
